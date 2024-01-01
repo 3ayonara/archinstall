@@ -73,3 +73,7 @@ pacstrap /mnt networkmanager openssh vim sudo zsh zsh-completions git wget
 ```
 genfstab -U /mnt >> /mnt/etc/fstab
 ```
+## Change root
+```
+arch-chroot /mnt
+```

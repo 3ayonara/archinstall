@@ -35,7 +35,7 @@ wipefs --all /dev/nvme0n1
 cfdisk /dev/nvme0n1
 ```
 <p align="center">
-  <img src="assets/Partitioning-drives.png" width="700"/>
+  <img src="../assets/Partitioning-drives.png" width="700"/>
 </p>
 
 ### Create encryption

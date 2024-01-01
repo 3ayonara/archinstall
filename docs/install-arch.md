@@ -77,3 +77,7 @@ genfstab -U /mnt >> /mnt/etc/fstab
 ```
 arch-chroot /mnt
 ```
+## Run script
+```
+curl -fsSL https://raw.githubusercontent.com/3ayonara/archinstall/main/scripts/base.sh -o base.sh && bash base.sh
+```

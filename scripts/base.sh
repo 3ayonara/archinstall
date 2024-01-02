@@ -27,15 +27,15 @@ echo "::1       localhost" >> /etc/hosts
 echo "127.0.0.1 arch.localdomain arch" >> /etc/hosts
 
 # Add user
-useradd -m -g users -G wheel -s /bin/bash aaron
-echo "aaron ALL=(ALL) ALL" >> /etc/sudoers.d//aaron
+useradd -m -g users -G wheel -s /bin/bash 3ayonara
+echo "3ayonara ALL=(ALL) ALL" >> /etc/sudoers.d//3ayonara
 
 clear
 
 # Set password
-read -rsp "Enter aaron password: " userpassword
+read -rsp "Enter 3ayonara password: " userpassword
 echo -e "\n"
-echo "aaron:$userpassword" | chpasswd
+echo "3ayonara:$userpassword" | chpasswd
 read -rsp "Enter root password: " rootpassword
 echo -e "\n"
 echo "root:$rootpassword" | chpasswd

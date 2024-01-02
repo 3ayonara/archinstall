@@ -30,11 +30,12 @@ echo "127.0.0.1 arch.localdomain arch" >> /etc/hosts
 useradd -m -g users -G wheel -s /bin/bash aaron
 echo "aaron ALL=(ALL) ALL" >> /etc/sudoers.d//aaron
 
+clear
+
 # Set password
 read -rsp "Enter aaron password: " userpassword
 echo -e "\n"
 echo "aaron:$userpassword" | chpasswd
-echo -e "\n"
 read -rsp "Enter root password: " rootpassword
 echo -e "\n"
 echo "root:$rootpassword" | chpasswd
